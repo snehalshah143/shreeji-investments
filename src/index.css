@@ -84,8 +84,8 @@ html {
     width: 100% !important;
     margin: 0 !important;
     padding: 0.75rem 1.5rem !important;
-    justify-content: flex-start !important;
-    text-align: left !important;
+    justify-content: center !important;
+    text-align: center !important;
   }
   
   /* Add proper spacing between buttons in mobile */
