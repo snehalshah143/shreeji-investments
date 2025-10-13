@@ -44,7 +44,7 @@ const About = () => {
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gold-600 mb-2">5+</div>
+                  <div className="text-3xl font-bold text-gold-600 mb-2">12+</div>
                   <div className="text-gray-600">Years Experience</div>
                 </div>
                 <div className="text-center">

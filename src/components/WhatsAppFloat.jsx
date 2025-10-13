@@ -13,6 +13,11 @@ const WhatsAppFloat = () => {
       number: '9632359042',
       name: 'Secondary Contact',
       message: 'Hello! I would like to know more about your investment services.'
+    },
+    {
+      number: '9834101606',
+      name: 'Expert Contact',
+      message: 'Hi! I need expert financial advice and consultation.'
     }
   ];
 

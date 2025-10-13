@@ -122,7 +122,8 @@ const Services = () => {
       actionButton: {
         type: 'whatsapp',
         text: 'Open Demat Account',
-        message: 'Hi! I am interested in opening a Demat account. Please provide me with the details and process.'
+        message: 'Hi! I am interested in opening a Demat account. Please provide me with the details and process.',
+        phoneNumber: '919834101606'
       }
     }
   ];
@@ -195,7 +196,8 @@ const Services = () => {
       actionButton: {
         type: 'whatsapp',
         text: 'Buy Insurance',
-        message: 'Hi! I am interested in purchasing insurance. Please provide me with the best options available.'
+        message: 'Hi! I am interested in purchasing insurance. Please provide me with the best options available.',
+        phoneNumber: '919834101606'
       }
     }
   ];
@@ -382,7 +384,7 @@ const Services = () => {
               </p>
               <button
                 onClick={() => {
-                  const url = `https://wa.me/919922244479?text=${encodeURIComponent('Hi! I am interested in opening a Demat account. Please provide me with the details and process.')}`;
+                  const url = `https://wa.me/919834101606?text=${encodeURIComponent('Hi! I am interested in opening a Demat account. Please provide me with the details and process.')}`;
                   window.open(url, '_blank');
                 }}
                 className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
@@ -407,7 +409,7 @@ const Services = () => {
               </p>
               <button
                 onClick={() => {
-                  const url = `https://wa.me/919922244479?text=${encodeURIComponent('Hi! I am interested in purchasing insurance. Please provide me with the best options available.')}`;
+                  const url = `https://wa.me/919834101606?text=${encodeURIComponent('Hi! I am interested in purchasing insurance. Please provide me with the best options available.')}`;
                   window.open(url, '_blank');
                 }}
                 className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
