@@ -16,7 +16,7 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-200 relative overflow-hidden">
+    <nav className="bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 shadow-lg sticky top-0 z-50 border-b border-gold-500 relative overflow-hidden">
       {/* Financial Background Elements */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         {/* Candle Chart Pattern */}
@@ -74,7 +74,7 @@ const Navbar = () => {
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center group">
@@ -92,7 +92,7 @@ const Navbar = () => {
                 />
                 <span className="text-white font-bold text-xl hidden">S</span>
               </div>
-              <span className="ml-3 text-xl font-bold text-navy-900 group-hover:text-navy-700 transition-colors duration-200">
+              <span className="ml-3 text-3xl md:text-4xl lg:text-5xl font-bold text-white group-hover:text-gold-300 transition-colors duration-200 logo-text">
                 Shreeji Investments
               </span>
             </Link>
@@ -107,8 +107,8 @@ const Navbar = () => {
                   to={item.path}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
                     isActive(item.path)
-                      ? 'bg-navy-900 text-white shadow-lg'
-                      : 'text-navy-700 hover:bg-navy-100 hover:text-navy-900'
+                      ? 'bg-gold-500 text-navy-900 shadow-lg'
+                      : 'text-white hover:bg-gold-500 hover:text-navy-900'
                   }`}
                 >
                   {item.name}
@@ -121,7 +121,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-navy-700 hover:text-navy-900 hover:bg-navy-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-navy-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gold-300 hover:bg-gold-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold-500"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -164,15 +164,15 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-        <div className="px-4 pt-2 pb-4 space-y-1 bg-white border-t border-gray-200 shadow-lg">
+        <div className="px-4 pt-2 pb-4 space-y-1 bg-navy-800 border-t border-gold-500 shadow-lg">
           {navItems.map((item) => (
             <Link
               key={item.name}
               to={item.path}
               className={`block px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${
                 isActive(item.path)
-                  ? 'bg-navy-900 text-white shadow-md'
-                  : 'text-navy-700 hover:bg-navy-50 hover:text-navy-900'
+                  ? 'bg-gold-500 text-navy-900 shadow-md'
+                  : 'text-white hover:bg-gold-500 hover:text-navy-900'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
