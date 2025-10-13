@@ -26,7 +26,7 @@ const ActionButtons = () => {
     } else {
       // Fallback to WhatsApp for now
       const message = 'Hi! I am interested in opening a Demat account. Please provide me with the details and process.';
-      const url = `https://wa.me/919834101606?text=${encodeURIComponent(message)}`;
+      const url = `https://wa.me/919922244479?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
     }
   };
@@ -39,17 +39,31 @@ const ActionButtons = () => {
       motor: 'Hi! I am interested in Motor Insurance. Please provide me with the best Motor Insurance options available.'
     };
 
-    const url = `https://wa.me/919834101606?text=${encodeURIComponent(messages[insuranceType])}`;
+    const url = `https://wa.me/919922244479?text=${encodeURIComponent(messages[insuranceType])}`;
     window.open(url, '_blank');
     setIsInsuranceDropdownOpen(false);
   };
 
+  const handleMutualFundsClick = () => {
+    const message = 'Hi! I am interested in Mutual Funds investment. Please provide me with the best Mutual Fund options available and help me choose the right funds for my investment goals.';
+    const url = `https://wa.me/919922244479?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
+  const handleInvestmentIdeasClick = () => {
+    const message = 'Hi! I am looking for investment ideas and strategies. Please provide me with expert investment recommendations and market insights to help me make informed investment decisions.';
+    const url = `https://wa.me/919922244479?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
+
   return (
-    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+    <div className="bg-navy-900 py-4 sticky top-16 z-40">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row gap-3 lg:gap-4 justify-center items-center">
       {/* Open Demat Account Button */}
       <button
         onClick={handleDematAccountClick}
-        className="bg-navy-900 hover:bg-navy-800 text-white font-semibold py-4 px-8 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-3 group"
+        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-3 lg:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 group text-xs lg:text-sm"
       >
         <span>OPEN DEMAT ACCOUNT</span>
         <svg 
@@ -66,7 +80,7 @@ const ActionButtons = () => {
       <div className="relative" ref={dropdownRef}>
         <button
           onClick={() => setIsInsuranceDropdownOpen(!isInsuranceDropdownOpen)}
-          className="bg-navy-900 hover:bg-navy-800 text-white font-semibold py-4 px-8 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-3 group"
+          className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-3 lg:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 group text-xs lg:text-sm"
         >
           <span>BUY INSURANCE</span>
           <svg 
@@ -133,6 +147,40 @@ const ActionButtons = () => {
             </div>
           </div>
         )}
+      </div>
+
+      {/* Buy Mutual Funds Button */}
+      <button
+        onClick={handleMutualFundsClick}
+        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-3 lg:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 group text-xs lg:text-sm"
+      >
+        <span>BUY MUTUAL FUNDS</span>
+        <svg 
+          className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      {/* Ideas To Invest Button */}
+      <button
+        onClick={handleInvestmentIdeasClick}
+        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-3 lg:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 group text-xs lg:text-sm"
+      >
+        <span>IDEAS TO INVEST</span>
+        <svg 
+          className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+        </div>
       </div>
     </div>
   );

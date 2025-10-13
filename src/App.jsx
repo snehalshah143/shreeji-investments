@@ -2,8 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
-import ActionBars from './components/ActionBars';
-import VerticalActionButtons from './components/VerticalActionButtons';
+import ActionButtons from './components/ActionButtons';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -15,6 +14,7 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col">
         <Navbar />
+        <ActionButtons />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -26,8 +26,6 @@ function App() {
         </main>
         <Footer />
         <WhatsAppFloat />
-        <ActionBars />
-        <VerticalActionButtons />
       </div>
     </Router>
   );
