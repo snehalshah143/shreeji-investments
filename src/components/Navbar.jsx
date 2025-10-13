@@ -92,7 +92,7 @@ const Navbar = () => {
                 />
                 <span className="text-white font-bold text-xl hidden">S</span>
               </div>
-              <span className="ml-3 text-3xl md:text-4xl lg:text-5xl font-bold text-white group-hover:text-gold-300 transition-colors duration-200 logo-text">
+              <span className="ml-3 text-lg sm:text-xl md:text-4xl lg:text-5xl font-bold text-white group-hover:text-gold-300 transition-colors duration-200 logo-text">
                 Shreeji Investments
               </span>
             </Link>
