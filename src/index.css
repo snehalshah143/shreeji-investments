@@ -88,8 +88,8 @@ html {
     text-align: left !important;
   }
   
-  /* Remove any extra spacing in the flex container */
+  /* Add proper spacing between buttons in mobile */
   .action-buttons-container {
-    gap: 0 !important;
+    gap: 0.5rem !important;
   }
 }
