@@ -60,30 +60,6 @@ const ActionButtons = () => {
     <div className="bg-navy-900 py-3 md:py-4 sticky top-16 z-40">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 justify-center items-center">
-          <style jsx>{`
-            @media (max-width: 640px) {
-              .mobile-full-width {
-                width: 100% !important;
-                min-width: 100% !important;
-                max-width: 100% !important;
-                flex: 1 1 100% !important;
-                box-sizing: border-box !important;
-              }
-            }
-            /* Force all buttons to have same dimensions */
-            .uniform-button {
-              display: flex !important;
-              align-items: center !important;
-              justify-content: center !important;
-            }
-            @media (max-width: 640px) {
-              .uniform-button {
-                width: 100% !important;
-                min-width: 100% !important;
-                max-width: 100% !important;
-              }
-            }
-          `}</style>
       {/* Open Demat Account Button */}
       <button
         onClick={handleDematAccountClick}

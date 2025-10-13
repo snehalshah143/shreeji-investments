@@ -68,3 +68,23 @@ html {
 .animate-scroll {
   animation: scroll 15s linear infinite;
 }
+
+/* Mobile button uniformity fix */
+@media (max-width: 640px) {
+  .mobile-full-width {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  .uniform-button {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
