@@ -94,4 +94,9 @@ html {
   .action-buttons-container {
     gap: 0.5rem !important;
   }
+  
+  /* Make action buttons scroll with page in mobile view */
+  .action-buttons-wrapper {
+    position: static !important;
+  }
 }
