@@ -16,17 +16,17 @@ const Footer = () => {
 
       {/* Main Footer Content */}
       <div className="relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12">
             {/* Company Info */}
-            <div className="lg:col-span-2 space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-xl flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-2xl">S</span>
+            <div className="md:col-span-2 lg:col-span-2 space-y-4 md:space-y-6">
+              <div className="flex items-center space-x-3 md:space-x-4">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-gold-400 to-gold-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <span className="text-white font-bold text-lg md:text-2xl">S</span>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">Shreeji Investments</h3>
-                  <p className="text-gold-400 text-sm font-medium">Financial Advisory Services</p>
+                  <h3 className="text-xl md:text-2xl font-bold text-white">Shreeji Investments</h3>
+                  <p className="text-gold-400 text-xs md:text-sm font-medium">Financial Advisory Services</p>
                 </div>
               </div>
               <p className="text-gray-300 text-base leading-relaxed max-w-md">
@@ -110,12 +110,12 @@ const Footer = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm font-medium">Email</p>
-                    <a 
-                      href="mailto:snehal.shah451@gmail.com"
-                      className="text-gray-300 hover:text-gold-400 transition-colors duration-200 text-sm"
-                    >
-                      snehal.shah451@gmail.com
-                    </a>
+                        <a
+                          href="mailto:shreejiinvestments108@gmail.com"
+                          className="text-gray-300 hover:text-gold-400 transition-colors duration-200 text-sm"
+                        >
+                          shreejiinvestments108@gmail.com
+                        </a>
                   </div>
                 </div>
                 

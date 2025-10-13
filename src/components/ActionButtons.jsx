@@ -57,13 +57,13 @@ const ActionButtons = () => {
   };
 
   return (
-    <div className="bg-navy-900 py-4 sticky top-16 z-40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-3 lg:gap-4 justify-center items-center">
+    <div className="bg-navy-900 py-3 md:py-4 sticky top-16 z-40">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 justify-center items-center">
       {/* Open Demat Account Button */}
       <button
         onClick={handleDematAccountClick}
-        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-3 lg:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 group text-xs lg:text-sm"
+        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
       >
         <span>OPEN DEMAT ACCOUNT</span>
         <svg 
@@ -80,7 +80,7 @@ const ActionButtons = () => {
       <div className="relative" ref={dropdownRef}>
         <button
           onClick={() => setIsInsuranceDropdownOpen(!isInsuranceDropdownOpen)}
-          className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-3 lg:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 group text-xs lg:text-sm"
+          className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
         >
           <span>BUY INSURANCE</span>
           <svg 
@@ -152,7 +152,7 @@ const ActionButtons = () => {
       {/* Buy Mutual Funds Button */}
       <button
         onClick={handleMutualFundsClick}
-        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-3 lg:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 group text-xs lg:text-sm"
+        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
       >
         <span>BUY MUTUAL FUNDS</span>
         <svg 
@@ -168,7 +168,7 @@ const ActionButtons = () => {
       {/* Ideas To Invest Button */}
       <button
         onClick={handleInvestmentIdeasClick}
-        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-3 lg:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2 group text-xs lg:text-sm"
+        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
       >
         <span>IDEAS TO INVEST</span>
         <svg 
