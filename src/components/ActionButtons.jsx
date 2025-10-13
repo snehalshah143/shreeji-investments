@@ -59,7 +59,7 @@ const ActionButtons = () => {
   return (
     <div className="bg-navy-900 py-3 md:py-4 sticky top-16 z-40">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 justify-center items-center action-buttons-container">
       {/* Open Demat Account Button */}
       <button
         onClick={handleDematAccountClick}

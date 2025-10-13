@@ -74,6 +74,10 @@ html {
   .buy-insurance-container {
     width: 100% !important;
     flex: 1 !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
   }
   
   .buy-insurance-button {
@@ -82,5 +86,10 @@ html {
     padding: 0.75rem 1.5rem !important;
     justify-content: flex-start !important;
     text-align: left !important;
+  }
+  
+  /* Remove any extra spacing in the flex container */
+  .action-buttons-container {
+    gap: 0 !important;
   }
 }
