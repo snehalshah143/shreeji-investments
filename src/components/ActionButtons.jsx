@@ -77,10 +77,10 @@ const ActionButtons = () => {
       </button>
 
       {/* Buy Insurance Button with Dropdown */}
-      <div className="relative" ref={dropdownRef}>
+      <div className="relative buy-insurance-container" ref={dropdownRef}>
         <button
           onClick={() => setIsInsuranceDropdownOpen(!isInsuranceDropdownOpen)}
-          className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 text-sm w-full sm:w-auto m-0"
+          className="buy-insurance-button bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 text-sm w-full sm:w-auto m-0"
         >
           <span>BUY INSURANCE</span>
           <svg 

@@ -68,3 +68,16 @@ html {
 .animate-scroll {
   animation: scroll 15s linear infinite;
 }
+
+/* Mobile-only fix for BUY INSURANCE button alignment */
+@media (max-width: 640px) {
+  .buy-insurance-container {
+    width: 100% !important;
+  }
+  
+  .buy-insurance-button {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0.75rem 1.5rem !important;
+  }
+}
