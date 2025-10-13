@@ -66,13 +66,28 @@ const ActionButtons = () => {
                 width: 100% !important;
                 min-width: 100% !important;
                 max-width: 100% !important;
+                flex: 1 1 100% !important;
+                box-sizing: border-box !important;
+              }
+            }
+            /* Force all buttons to have same dimensions */
+            .uniform-button {
+              display: flex !important;
+              align-items: center !important;
+              justify-content: center !important;
+            }
+            @media (max-width: 640px) {
+              .uniform-button {
+                width: 100% !important;
+                min-width: 100% !important;
+                max-width: 100% !important;
               }
             }
           `}</style>
       {/* Open Demat Account Button */}
       <button
         onClick={handleDematAccountClick}
-        className="mobile-full-width bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
+        className="mobile-full-width uniform-button bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
       >
         <span>OPEN DEMAT ACCOUNT</span>
         <svg 
@@ -89,7 +104,7 @@ const ActionButtons = () => {
       <div className="relative" ref={dropdownRef}>
         <button
           onClick={() => setIsInsuranceDropdownOpen(!isInsuranceDropdownOpen)}
-          className="mobile-full-width bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
+          className="mobile-full-width uniform-button bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
         >
           <span>BUY INSURANCE</span>
           <svg 
@@ -104,7 +119,7 @@ const ActionButtons = () => {
 
         {/* Insurance Options Dropdown */}
         {isInsuranceDropdownOpen && (
-          <div className="absolute top-full left-0 mt-2 w-full sm:w-64 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+          <div className="absolute top-full left-0 mt-2 w-full sm:w-64 bg-white rounded-lg shadow-xl border border-gray-200 z-50 animate-scale-in origin-top">
             <div className="py-2">
               <button
                 onClick={() => handleInsuranceClick('life')}
@@ -161,7 +176,7 @@ const ActionButtons = () => {
       {/* Buy Mutual Funds Button */}
       <button
         onClick={handleMutualFundsClick}
-        className="mobile-full-width bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
+        className="mobile-full-width uniform-button bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
       >
         <span>BUY MUTUAL FUNDS</span>
         <svg 
@@ -177,7 +192,7 @@ const ActionButtons = () => {
       {/* Ideas To Invest Button */}
       <button
         onClick={handleInvestmentIdeasClick}
-        className="mobile-full-width bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
+        className="mobile-full-width uniform-button bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
       >
         <span>IDEAS TO INVEST</span>
         <svg 
