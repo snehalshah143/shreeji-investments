@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
 import ActionBars from './components/ActionBars';
+import VerticalActionButtons from './components/VerticalActionButtons';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -26,6 +27,7 @@ function App() {
         <Footer />
         <WhatsAppFloat />
         <ActionBars />
+        <VerticalActionButtons />
       </div>
     </Router>
   );

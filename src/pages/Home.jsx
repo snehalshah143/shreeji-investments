@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import ActionButtons from '../components/ActionButtons';
 
 const Home = () => {
   return (
@@ -17,7 +16,7 @@ const Home = () => {
               for all your investment needs with personalized solutions and 
               professional service.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp mb-12" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
               <Link
                 to="/contact"
                 className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-lg"
@@ -30,11 +29,6 @@ const Home = () => {
               >
                 Our Services
               </Link>
-            </div>
-            
-            {/* Professional Action Buttons */}
-            <div className="animate-fadeInUp" style={{ animationDelay: '0.6s' }}>
-              <ActionButtons />
             </div>
           </div>
         </div>

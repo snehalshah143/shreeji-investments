@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import ServiceCard from '../components/ServiceCard';
-import ActionButtons from '../components/ActionButtons';
 
 const Services = () => {
   // Financial & Investment Services
@@ -359,40 +358,25 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Professional Action Buttons Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-4">
-              Get Started Today
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Take the first step towards your financial goals with our professional services
-            </p>
-          </div>
-
-          <ActionButtons />
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="py-20 bg-navy-900 text-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Contact us today for a free consultation and let us help you choose 
-            the right financial services for your needs.
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+            Take the first step towards your financial goals with our professional services. 
+            Use the action buttons on the right side of the page to get started instantly.
           </p>
           <Link
             to="/contact"
-            className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-lg inline-block"
+            className="bg-navy-900 hover:bg-navy-800 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 shadow-lg inline-block"
           >
-            Schedule Free Consultation
+            Contact Us Today
           </Link>
         </div>
       </section>
+
     </div>
   );
 };
