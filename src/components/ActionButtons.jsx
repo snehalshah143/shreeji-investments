@@ -77,10 +77,10 @@ const ActionButtons = () => {
       </button>
 
       {/* Buy Insurance Button with Dropdown */}
-      <div className="relative" ref={dropdownRef}>
+      <div className="relative w-full sm:w-auto" ref={dropdownRef}>
         <button
           onClick={() => setIsInsuranceDropdownOpen(!isInsuranceDropdownOpen)}
-          className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-auto"
+          className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full"
         >
           <span>BUY INSURANCE</span>
           <svg 
@@ -95,7 +95,7 @@ const ActionButtons = () => {
 
         {/* Insurance Options Dropdown */}
         {isInsuranceDropdownOpen && (
-          <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+          <div className="absolute top-full left-0 mt-2 w-full sm:w-64 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
             <div className="py-2">
               <button
                 onClick={() => handleInsuranceClick('life')}
