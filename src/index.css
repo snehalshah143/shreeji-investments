@@ -70,7 +70,7 @@ html {
 }
 
 /* Mobile-only fix for BUY INSURANCE button alignment */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .buy-insurance-container {
     width: 100% !important;
     flex: 1 !important;
@@ -98,5 +98,7 @@ html {
   /* Make action buttons scroll with page in mobile view */
   .action-buttons-wrapper {
     position: static !important;
+    top: auto !important;
+    z-index: auto !important;
   }
 }
