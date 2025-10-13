@@ -54,3 +54,17 @@ html {
 .animate-pulse-slow {
   animation: pulse 2s infinite;
 }
+
+/* Partner logos scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
