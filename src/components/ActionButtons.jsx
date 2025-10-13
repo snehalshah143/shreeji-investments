@@ -63,7 +63,7 @@ const ActionButtons = () => {
       {/* Open Demat Account Button */}
       <button
         onClick={handleDematAccountClick}
-        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-48"
+        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 text-sm w-full sm:w-auto min-w-[200px]"
       >
         <span>OPEN DEMAT ACCOUNT</span>
         <svg 
@@ -80,7 +80,7 @@ const ActionButtons = () => {
       <div className="relative w-full sm:w-48" ref={dropdownRef}>
         <button
           onClick={() => setIsInsuranceDropdownOpen(!isInsuranceDropdownOpen)}
-          className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-48"
+          className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 text-sm w-full sm:w-auto min-w-[200px]"
         >
           <span>BUY INSURANCE</span>
           <svg 
@@ -152,7 +152,7 @@ const ActionButtons = () => {
       {/* Buy Mutual Funds Button */}
       <button
         onClick={handleMutualFundsClick}
-        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-48"
+        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 text-sm w-full sm:w-auto min-w-[200px]"
       >
         <span>BUY MUTUAL FUNDS</span>
         <svg 
@@ -168,7 +168,7 @@ const ActionButtons = () => {
       {/* Ideas To Invest Button */}
       <button
         onClick={handleInvestmentIdeasClick}
-        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-2.5 px-3 sm:py-3 sm:px-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-1 sm:space-x-2 group text-xs sm:text-sm w-full sm:w-48"
+        className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 text-sm w-full sm:w-auto min-w-[200px]"
       >
         <span>IDEAS TO INVEST</span>
         <svg 
