@@ -16,7 +16,7 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 shadow-lg sticky top-0 z-50 border-b border-gold-500 relative overflow-hidden">
+    <nav className="bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 shadow-lg sticky top-0 z-50 border-b-2 border-gold-500 relative overflow-hidden">
       {/* Financial Background Elements */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         {/* Candle Chart Pattern */}
@@ -164,7 +164,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-        <div className="px-4 pt-2 pb-4 space-y-1 bg-navy-800 border-t border-gold-500 shadow-lg">
+        <div className="px-4 pt-2 pb-4 space-y-1 bg-navy-800 border-t-2 border-gold-500 shadow-lg">
           {navItems.map((item) => (
             <Link
               key={item.name}
