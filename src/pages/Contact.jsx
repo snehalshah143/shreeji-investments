@@ -52,21 +52,10 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-navy-900 to-navy-800 text-white py-20 relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-20 h-20 border border-gold-400 rounded-full"></div>
-          <div className="absolute top-32 right-20 w-16 h-16 border border-gold-400 rounded-full"></div>
-          <div className="absolute bottom-20 left-1/4 w-12 h-12 border border-gold-400 rounded-full"></div>
-        </div>
+      <section className="bg-gradient-to-r from-navy-900 to-navy-800 text-white py-12 relative overflow-hidden">
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gold-500 rounded-full mb-6">
-              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-              </svg>
-            </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Schedule Your <span className="text-gold-400">Consultation</span>
             </h1>
@@ -103,7 +92,7 @@ const Contact = () => {
 
 
       {/* Contact Form & Info */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
