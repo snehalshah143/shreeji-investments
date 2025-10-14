@@ -19,16 +19,9 @@ const ActionButtons = () => {
   }, []);
 
   const handleDematAccountClick = () => {
-    // You can provide the link here when ready
-    const dematLink = '#'; // Replace with actual link
-    if (dematLink !== '#') {
-      window.open(dematLink, '_blank');
-    } else {
-      // Fallback to WhatsApp for now
-      const message = 'Hi! I am interested in opening a Demat account. Please provide me with the details and process.';
-      const url = `https://wa.me/919922244479?text=${encodeURIComponent(message)}`;
-      window.open(url, '_blank');
-    }
+    // Redirect to Angel One Demat Account opening link
+    const dematLink = 'https://a.aonelink.in/ANGOne/a7rxf6O';
+    window.open(dematLink, '_blank');
   };
 
   const handleInsuranceClick = (insuranceType) => {
@@ -51,9 +44,9 @@ const ActionButtons = () => {
   };
 
   const handleInvestmentIdeasClick = () => {
-    const message = 'Hi! I am looking for investment ideas and strategies. Please provide me with expert investment recommendations and market insights to help me make informed investment decisions.';
-    const url = `https://wa.me/919922244479?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
+    // Redirect to WhatsApp group for investment ideas
+    const whatsappGroupLink = 'https://chat.whatsapp.com/LPAV0ntK3wW7EGRm0fvucQ?mode=wwc';
+    window.open(whatsappGroupLink, '_blank');
   };
 
   return (
