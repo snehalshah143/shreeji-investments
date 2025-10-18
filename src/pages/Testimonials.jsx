@@ -5,36 +5,46 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Rajesh Kumar",
-      role: "Business Owner",
+      name: "Vikram Joshi",
+      role: "Small Business Owner",
       location: "Indapur, Pune",
-      content: "Shreeji Investments has been instrumental in helping me plan my retirement. Their expert guidance and personalized approach have given me confidence in my financial future. The team is professional, responsive, and truly cares about their clients' success.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+      content: "What impressed me most about Shreeji Investments is their after-service support. Even after 2 years of working with them, they still call me monthly to review my portfolio and suggest adjustments. They remember my family situation and always ask about my business. This personalized attention makes all the difference.",
+      rating: 5
     },
     {
-      name: "Priya Sharma",
-      role: "Software Engineer",
+      name: "Meera Agarwal",
+      role: "Government Employee",
       location: "Pune",
-      content: "I was completely new to investing when I approached Shreeji Investments. They patiently explained everything and created a perfect investment plan for my goals. My portfolio has grown significantly, and I couldn't be happier with their service.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face"
+      content: "I was hesitant about investing initially, but Shreeji Investments took time to understand my risk appetite and financial goals. They didn't push any products on me. Instead, they created a simple SIP plan that fits my salary. Their regular follow-ups and market updates via WhatsApp make me feel secure about my investments.",
+      rating: 5
     },
     {
-      name: "Amit Patel",
-      role: "Doctor",
+      name: "Dr. Ramesh Patil",
+      role: "Medical Practitioner",
       location: "Indapur, Pune",
-      content: "The tax planning services provided by Shreeji Investments have saved me a significant amount of money. Their knowledge of tax-saving instruments and strategies is exceptional. I highly recommend their services to anyone looking for professional financial advice.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
+      content: "The personalized service at Shreeji Investments is exceptional. They understand that as a doctor, my income is irregular. They've created a flexible investment plan that works with my schedule. When I had a medical emergency last year, they helped me liquidate some investments quickly without any hassle. Their support during difficult times is remarkable.",
+      rating: 5
     },
     {
-      name: "Sunita Desai",
-      role: "Teacher",
+      name: "Kavita Deshmukh",
+      role: "School Teacher",
       location: "Pune",
-      content: "As a teacher, I needed help with my children's education planning. Shreeji Investments created a comprehensive plan that will ensure my children's education is fully funded. Their attention to detail and regular follow-ups are commendable.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+      content: "I've been with Shreeji Investments for 3 years now. What I love most is how they treat me like family. They remember my daughter's birthday and even suggested a small investment for her future. Their after-service is outstanding - they explain everything in simple terms and never make me feel ignorant about financial matters.",
+      rating: 5
+    },
+    {
+      name: "Suresh Kulkarni",
+      role: "Retired Bank Manager",
+      location: "Indapur, Pune",
+      content: "After retiring from banking, I thought I knew everything about investments. But Shreeji Investments showed me new perspectives and better strategies. Their personalized approach considers my age and risk tolerance perfectly. They call me every quarter to discuss market conditions and adjust my portfolio accordingly. This level of care is rare.",
+      rating: 5
+    },
+    {
+      name: "Anita Pawar",
+      role: "Homemaker",
+      location: "Pune",
+      content: "As a homemaker, I was completely new to investments. Shreeji Investments didn't rush me into anything. They spent 3 meetings just understanding my family's needs and my comfort level. They created a simple plan that I can understand and manage. Their regular WhatsApp updates and personal calls make me feel confident about my family's financial future.",
+      rating: 5
     }
   ];
 
@@ -92,22 +102,15 @@ const Testimonials = () => {
               </blockquote>
 
               {/* Client Info */}
-              <div className="flex items-center justify-center space-x-4">
-                <img
-                  src={testimonials[currentTestimonial].image}
-                  alt={testimonials[currentTestimonial].name}
-                  className="w-16 h-16 rounded-full object-cover"
-                />
-                <div className="text-left">
-                  <div className="font-semibold text-navy-900 text-lg">
-                    {testimonials[currentTestimonial].name}
-                  </div>
-                  <div className="text-gray-600">
-                    {testimonials[currentTestimonial].role}
-                  </div>
-                  <div className="text-gray-500 text-sm">
-                    {testimonials[currentTestimonial].location}
-                  </div>
+              <div className="text-center">
+                <div className="font-semibold text-navy-900 text-lg">
+                  {testimonials[currentTestimonial].name}
+                </div>
+                <div className="text-gray-600">
+                  {testimonials[currentTestimonial].role}
+                </div>
+                <div className="text-gray-500 text-sm">
+                  {testimonials[currentTestimonial].location}
                 </div>
               </div>
             </div>

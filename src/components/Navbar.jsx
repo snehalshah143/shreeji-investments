@@ -9,7 +9,6 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
-    { name: 'Testimonials', path: '/testimonials' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -78,11 +77,11 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center group">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 overflow-hidden">
-                {/* Custom Logo - Replace with your converted SVG/PNG */}
+              <div className="w-64 h-64 md:w-72 md:h-72 flex items-center justify-center group-hover:scale-105 transition-all duration-300">
+                {/* 3D Logo */}
                 <img 
-                  src="/images/logo.svg" 
-                  alt="Shreeji Investments Logo" 
+                  src="/images/shreeji_3d_png_file.png" 
+                  alt="Shreeji Investments 3D Logo" 
                   className="w-full h-full object-contain"
                   onError={(e) => {
                     // Fallback to text logo if image fails to load
@@ -92,7 +91,7 @@ const Navbar = () => {
                 />
                 <span className="text-white font-bold text-xl hidden">S</span>
               </div>
-              <span className="ml-3 text-lg sm:text-xl md:text-4xl lg:text-5xl font-bold text-white group-hover:text-gold-300 transition-colors duration-200 logo-text">
+              <span className="ml-3 text-base sm:text-lg md:text-3xl lg:text-4xl font-bold text-white group-hover:text-gold-300 transition-colors duration-200 logo-text">
                 Shreeji Investments
               </span>
             </Link>

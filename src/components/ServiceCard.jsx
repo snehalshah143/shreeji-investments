@@ -26,11 +26,11 @@ const ServiceCard = ({
       )}
 
       {/* Icon */}
-      <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
-        isHighlighted ? 'bg-gold-100' : 'bg-navy-100'
-      }`}>
-        {icon}
-      </div>
+      {icon && (
+        <div className="mb-4">
+          {icon}
+        </div>
+      )}
 
       {/* Title */}
       <h3 className={`text-xl font-semibold mb-3 ${
