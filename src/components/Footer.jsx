@@ -16,11 +16,11 @@ const Footer = () => {
 
       {/* Main Footer Content */}
       <div className="relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 md:py-2 lg:py-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-1 md:pb-2 lg:pb-3">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {/* Company Info */}
-            <div className="md:col-span-2 lg:col-span-2">
-              <div className="flex items-start space-x-3 md:space-x-4">
+            <div className="md:col-span-2 lg:col-span-2 -mt-16">
+              <div className="flex items-center space-x-3 md:space-x-4 mb-0">
                 <div className="w-48 h-48 md:w-56 md:h-56 flex items-center justify-center flex-shrink-0">
                   <img 
                     src="/images/shreeji_3d_png_file.png" 
@@ -36,13 +36,13 @@ const Footer = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl md:text-2xl font-bold text-white mb-1">Shreeji Investments</h3>
-                  <p className="text-gold-400 text-xs md:text-sm font-medium mb-3">Financial Advisory Services</p>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Your trusted financial advisory partner with 12+ years of experience, providing expert guidance 
-                    for all your investment needs with personalized solutions and professional service.
-                  </p>
+                  <p className="text-gold-400 text-xs md:text-sm font-medium">Financial Advisory Services</p>
                 </div>
               </div>
+              <p className="text-gray-300 text-sm leading-relaxed -mt-8">
+                Your trusted financial advisory partner with 12+ years of experience, providing expert guidance 
+                for all your investment needs with personalized solutions and professional service.
+              </p>
             </div>
 
             {/* Quick Links */}
