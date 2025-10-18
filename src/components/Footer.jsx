@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-0 pb-1 md:pb-2 lg:pb-3">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
             {/* Company Info */}
-            <div className="md:col-span-2 lg:col-span-2 -mt-16">
+            <div className="md:col-span-2 lg:col-span-2 -mt-16 md:-mt-16 -mt-8">
               <div className="flex items-center space-x-3 md:space-x-4 mb-0">
                 <div className="w-48 h-48 md:w-56 md:h-56 flex items-center justify-center flex-shrink-0">
                   <img 
