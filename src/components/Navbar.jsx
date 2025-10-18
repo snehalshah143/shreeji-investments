@@ -77,7 +77,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center group">
-              <div className="w-64 h-64 md:w-72 md:h-72 flex items-center justify-center group-hover:scale-105 transition-all duration-300">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-72 md:h-72 flex items-center justify-center group-hover:scale-105 transition-all duration-300">
                 {/* 3D Logo */}
                 <img 
                   src="/images/shreeji_3d_png_file.png" 
@@ -91,7 +91,7 @@ const Navbar = () => {
                 />
                 <span className="text-white font-bold text-xl hidden">S</span>
               </div>
-              <span className="ml-3 text-base sm:text-lg md:text-3xl lg:text-4xl font-bold text-white group-hover:text-gold-300 transition-colors duration-200 logo-text">
+              <span className="ml-1 sm:ml-3 text-xs sm:text-lg md:text-3xl lg:text-4xl font-bold text-white group-hover:text-gold-300 transition-colors duration-200 logo-text">
                 Shreeji Investments
               </span>
             </Link>
